@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DIDIT</title>
+		<style>
+			@font-face {
+    		font-family: 'neurimboGothicRegular';
+    		src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/neurimboGothicRegular.woff2') format('woff2');
+    		font-weight: normal;
+    		font-style: normal;}
+    	@font-face {
+    		font-family: 'Pretendard-Regular';
+    		src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    		font-weight: 400;
+    		font-style: normal;}
+    	@font-face {
+    		font-family: 'GmarketSansMedium';
+    		src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    		font-weight: normal;
+    		font-style: normal;}
+    	html{font-family: 'GmarketSansMedium', sans-serif; word-break: keep-all;}
+		body, h1, h2, p, ol, ul{margin: 0; padding: 0}
+		li{list-style-type: none;}
+		.pill {
+  			background-color: #46F037; /* Fill 색상 */
+  			color: #FFFFFF;             /* 글자색 */
+  			padding: 10px 16px;
+  			border-radius: 50px;        /* 모서리 둥글게 */
+  			display: inline-block;      /* 크기 적용 */
+  			font-weight: 500;}           /* (선택) 폰트 굵기 */
+  	.pill-b {
+  			background-color: #46F037; /* Fill 색상 */
+  			color: #FFFFFF;             /* 글자색 */
+  			padding: 16px 32px;          /* 텍스트 주변 여백 */
+  			border-radius: 50px;        /* 모서리 둥글게 */
+  			display: inline-block;      /* 크기 적용 */
+  			font-weight: 500;}   
+		.flex{display: flex;}
+		.flex-container {
+  			display: flex;
+  			justify-content: space-between;}
+  		.wrap{width: 1000px; margin: auto;}
+  		.menu{width: 280px;}
+  		.menu li a:hover{background: #F0F0F0; border-radius: 50px; text-decoration: underline; transition: all 0.4s;}
+  		.menu li a{text-decoration: none; color: black; padding: 10px; display: block;}
+  		.logo{padding: 10px;}
+  		.font{font-family: 'neurimboGothicRegular', sans-serif;}
+  		.font-g{font-family: 'GmarketSansmedium', sans-serif;}
+  		.gif-minion{background: url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2dkNjJpY3J1M29haXFzZGVocTJmY2sxaGIxN3djMjB0YWp5ZGNtcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/eImrJKnOmuBDmqXNUj/giphy.gif); background-repeat: repeat; background-size: 40px;}
+  		.gif-exhausted{
+  			background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTBkd3UxenNvNG95ajBwMnQ4b205Nnp6cDFjdzluMDJuM21hcDgzbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l4pLXMFYQmTM2se7m/giphy.gif');
+  			background-repeat: no-repeat;
+  			background-position: center;
+  			background-size: cover;}
+  		 .gif-error{
+  			background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmg0cHBucWVld3Q3ZjcwbjRubzBjY2FtbnJ3cW1yZTRtMG5saWxsOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1RkDDoIVs3ntm/giphy.gif');
+  			background-repeat: no-repeat;
+  			background-position: center;
+  			background-size: cover;}
+  		.gradient{background: linear-gradient(to bottom, #46F037, black);}
+  		.span{background: #46F037;}
+  		.shadow{text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3)}
+  		.text-background {
+    		background-color: black;  /* 배경을 검정색으로 */
+   	 		color: white;             /* 텍스트 색상을 흰색으로 */
+    		padding: 10px;}            /* 텍스트와 배경 간 간격을 조절 */
+    	.border{
+  			border: 2px solid #d3d3d3; /* 테두리 색상과 두께 설정 */
+  			border-radius: 90px;    /* 모서리를 둥글게 설정 */
+  			background: transparent; /* 배경을 투명하게 설정 */
+  			padding: 0px;}          /* 내부 여백 설정 */
+			}
+			.align-center{align-content: center;}
+			.people{position: absolute; width: 900px; padding-top: 160px; margin-left: 400px}
+			.z-index{position: relative; z-index: 100;}
+			.right-image {
+		    display: block;
+		    margin-left: auto;
+		    margin-right: 0;}
+  		</style>
+</head>
+<body>
+<nav>
+	<div class="wrap flex-container" style="padding: 5px 0px;">
+		<div class="logo font" style="color: #46F037; font-size: 2rem"><span class="pill">DIDIT</span></div>
+		<ul class="menu flex-container">
+			<li style="padding-top: 12px"><a href="#">About us</a></li>
+			<li style="padding-top: 12px"><a href="#">Download</a></li>
+			<li style="padding-top: 12px"><a href="#">FAQ</a></li>
+		</ul>
+	</div>
+</nav>
+<section  style="background: linear-gradient(to bottom, #46F037, rgba(0, 0, 0, 0));">
+	<div class="wrap font-g z-index" style="text-align: center; padding-top: 210px; color: black; font-size: 2.5rem;">
+		모든 것을 미루는 미룬이들을 위한
+	</div>
+	<img src="zimg/people.png" class="people">
+	<div class="wrap font z-index" style="text-align: center; padding-top: 20px; padding-bottom: 480px; font-size: 8rem; color: black;">
+		DIDIT
+	</div>
+</section>
+<section style="padding-top: 650px; padding-bottom: 100px;">
+	<div class=" wrap border">
+		<div class="font shadow" style="text-align: center; padding-top: 100px; font-size: 4rem;">
+		DIDIT? DID IT!
+		</div>
+		<div class="" style="text-align: center; padding-top: 50px; padding-bottom: 100px; font-size: 1.5rem; line-height: 160%">
+		<span class="font" style="font-size: 1.9rem;">'DIDIT'</span>은 모든 것을 미루는 미룬이의 습관을 고쳐<br>시간에 쫓기지 않는 삶을 살 수 있게 하고자 기획하였습니다.
+		</div>
+	</div>
+</section>
+<section>
+	<div class="wrap" style="color: black; padding-top: 200px;padding-bottom: 200px; text-align: left;">
+		<p class="font-g pill-b" style="font-size: 2.5rem"><strong>우리 1시에 홍대에서 만나~</strong></p>
+		<img src="zimg/hongdae.png" style="position: absolute; width: 700px; margin-right: 130px; margin-top: 100px">
+		<p style="padding-top: 50px; padding-left: 30px; font-size: 1.5rem; line-height: 160%">가는데 1시간,씻는데 20분이니까<br>대충 11시 반에 준비해야겠다!</p>
+	</div>
+</section>
+<section class="gif-minion">
+	<div class="wrap font-g" style="color: white; padding: 200px 0px; text-align: center; font-size: 2rem;">
+		<span class="text-background">하고 핸드폰 하다가 10분씩 늦으시는 분들!</span>
+	</div>
+</section>
+<section style="padding-top: 50px">
+	<div class="wrap" style="padding-top: 200px;padding-bottom: 100px; text-align: left;">
+		<p class="font-g pill-b" style="font-size: 2.5rem;"><strong>이번엔 진짜 미리미리 공부해야지!</strong></p>
+		<p style="padding-top: 50px; padding-left: 30px; font-size: 1.5rem; line-height: 160%">오늘 너무 힘들다...<br>아직 일주일 남았으니까<br>내일 시작해도 되겠지?</p>
+		<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTBkd3UxenNvNG95ajBwMnQ4b205Nnp6cDFjdzluMDJuM21hcDgzbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l4pLXMFYQmTM2se7m/giphy.gif" class="right-image" style="padding-top: 30px; ">
+	</div>
+</section>
+<section>
+	<div style="display: flex;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"></div>
+  <div class="wrap">
+  	<h1 class="wrap" style="padding: 20px 0px; text-align: center; font-size: 2rem;">
+		하고 하루 전도 아니고 당일 새벽에 공부하시는 분들!</h1>
+  </div>
+   <div style="display: flex;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"><img src="zimg/fire.png" style="width: 100px; height: 100px;"></div>
+</section>
+<section>
+	<div class="wrap" style="color: black; padding-top: 250px; text-align: left;">
+		<p class="font-g pill-b" style="font-size: 2.5rem"><strong>게임 한 판만 하고 팀플 준비해야지...</strong></p>
+		<p style="padding-top: 50px; padding-left: 30px;font-size: 1.5rem; line-height: 160%">아니 한 시간 남았잖아?!<br>아직 다 못했는데<br>회의 미루면 민폐겠지ㅠㅠ</p>
+	</div>
+</section>
+<section>
+	<div class="wrap" style="display: flex">
+		<img src="zimg/gaze.png" style="width: 600px">
+		<img src="zimg/sad.png" style="width: 400px; padding-left: 20px">
+	</div>
+	<h1 class="wrap" style="padding-bottom: 250px; text-align: center; font-size: 2rem">
+		하고 눈물 흘리며 벼락치기 하는 분들!
+	</h1>
+</section>
+<section style="background: black">
+	<div class="wrap font-g" style="padding: 200px 0px; text-align: center; font-size: 2.8rem; color: white;">
+		당신은 당장 <span class="font" style="font-size: 3.5rem; color: #46F037;">'DIDIT'</span>해야 합니다.
+	</div>
+</section>
+	<div class="wrap font-g" style=" margin:0 auto; font-size: 1rem; line-height:1.6; color:#000;">
+
+	  <!-- 섹션 1: 약속 시간 수정 알림 -->
+	  <section style="margin-bottom:60px;">
+	     <div style="width:100%; display: flex; justify-content: center; margin-top: 200px; margin-bottom: 100px;">
+	  			<a href="#" style="background-color: #46F037; color:#fff; padding:8px 20px; border-radius:100px; text-decoration:none;">
+	    		상세정보
+	  			</a>
+			</div>
+	    <div style="display:flex; gap:20px;">
+	      <div style="flex:1;">
+	        <h3 style="font-size: 2rem; padding-top: 100px">약속 시간 수정 알림</h3>
+	        <p style="font-size: 1.2rem">약속 시간을 30분(사용자 지정) 전으로 수정해서 알려줍니다.</p>
+	      </div>
+	      <div style="flex:1;">
+	        <img src="zimg/yaksok.png" style="width:100%; height:auto; margin-top: 132px">
+	      </div>
+	    </div>
+	  </section>
+
+	  <!-- 섹션 2: 플랜 강제 모드 -->
+	  <section style="margin-bottom:60px;">
+	    <div style="display:flex; gap:20px;">
+	      <div style="flex:1;">
+	        <img src="zimg/plan.png" style="width:100%; height:auto; padding-top: 132px">
+	      </div>
+	      <div style="flex:1;">
+	        <h3 style="font-size: 2rem; padding-top: 100px; text-align: right;">플랜 강제 모드</h3>
+	        <p style="font-size: 1.2rem; text-align: right;">미리 설정한 플랜을 완료하지 못한 상태에서<br>
+	        게임을 하면 5초에 한 번씩 알림이 떠 방해합니다.</p>
+	      </div>
+	    </div>
+	  </section>
+
+	  <!-- 섹션 3: 팀플 민폐 방지 기능 -->
+	  <section style="margin-bottom:60px;">
+	    <div style="display:flex; gap:20px;">
+	      <div style="flex:1;">
+	        <h3 style="font-size: 2rem; padding-top: 100px">팀플 민폐 방지 기능</h3>
+	        <p style="font-size: 1.2rem">팀플 참여 예정 시간이 다가오면 마치 팀원인 것처럼 <br>수시로 문자를 보내 독촉합니다.</p>
+	      </div>
+	      <div style="flex:1;">
+	        <img src="zimg/team.png" style="width:100%; height:auto; padding-top: 132px">
+	      </div>
+	    </div>
+	  </section>
+
+	  <!-- 섹션 4: 자아 성찰 / 커뮤니티 -->
+	  <section style="margin-bottom:60px; padding-top: 200px;">
+	    <div style="display:flex; gap:20px;">
+	      <div style="flex:1;">
+	        <h3 style="font-size: 2rem; padding-top: 100px">자아성찰</h3>
+	        <p style="font-size: 1.2rem">프로필에 평균 지각 시간을 표시해 스스로 성찰하게 합니다.
+	        미완의 계획을 적나라하게 표시하고 수정할 수 없도록 합니다.</p>
+	        <img src="zimg/profile.png" style="width:100%; height:auto; padding-top: 50px">
+	      </div>
+	      <div style="flex:1;">
+	        <h3 style="font-size: 2rem; padding-top: 100px">커뮤니티</h3>
+	        <p style="font-size: 1.2rem">미루다가 피본 다른 미룬이들의 사례를 보고
+	        거울치료 합니다. 그리고 스스로의 경험도 공유하며 다시 반성합니다.</p>
+	        <img src="zimg/chat.png" style="width:100%; height:auto; padding-top: 80px">
+	      </div>
+	    </div>
+	  </section>
+
+	  <!-- 다운로드 버튼 -->
+	  <section class="font-g" style="text-align:center; margin-bottom:80px; padding-top: 200px;">
+	  	<div class="wrap" style="width:1000px; margin:0 auto; font-size: 1rem; line-height:1.6; color:#000;">
+
+		    <h3 style="font-size: 2.4rem"><span class="font" style="font-size: 3rem; color: #46F037">DO IT</span>을 <span class="font" style="font-size: 3rem; color: #46F037">DID IT</span>으로</h3>
+		    <p style="font-size: 1.8rem; padding-bottom: 50px">지금 갓생 살러가기<br>▼ ▼ ▼</p>
+		    <a class="font" href="#" style="display:inline-block; background-color: #46F037; color:#fff; padding: 0px 30px; border-radius:100px; text-decoration:none; font-size: 3rem ;">
+		      DOWNLOAD
+		    </a>
+		  </div>
+	  </section>
+	</div>
+ <img src="zimg/run.png" style="width: 1800px">
+  <!-- footer -->
+<footer style="background: #d0d0d0; padding-top: 50px ;padding-bottom: 50px; text-align: left; font-size: 12px; color: #555; line-height: 200%; margin-top: 250px">
+  <div style="max-width: 1000px; margin: auto;">
+    <p><strong>DIDIT</strong> | 대표자: 민서 | 사업자등록번호: 123-45-67890</p>
+    <p>서울특별시 노원구 시디로 123, 6층 | contact@didit.com | 02-1234-5678</p>
+    <p><a href="#">이용약관</a> | <a href="#">개인정보처리방침</a></p>
+    <p>© 2025 DIDIT. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
